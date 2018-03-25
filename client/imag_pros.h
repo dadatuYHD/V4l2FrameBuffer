@@ -37,22 +37,22 @@ typedef struct sockaddr_in SA_I;
 
 /*rgb32 数据结构声明*/
 struct rgb_32 {
-	unsigned char b;
-	unsigned char g;
-	unsigned char r;
-	unsigned char alpha;
+    unsigned char b;
+    unsigned char g;
+    unsigned char r;
+    unsigned char alpha;
 };
 /*rgb24 数据结构声明*/
 struct rgb_24{
-	unsigned char b;
-	unsigned char g;
-	unsigned char r;
+    unsigned char b;
+    unsigned char g;
+    unsigned char r;
 };
 /*外部变量声明*/
 extern int imag_fd;
 extern int control_fd;
-extern	SA_I imag_col_addr;
-extern 	SA_I control_addr;
+extern  SA_I imag_col_addr;
+extern  SA_I control_addr;
 extern struct rgb_32 rgb32;
 extern struct rgb_24 rgb24;
 extern pthread_mutex_t mutex;
